@@ -82,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:fontFamily="@font/ubuntu_medium"
-                    android:text="SAS Council 2019-20"
+                    android:text="Event Council 2019-20"
                     android:textColor="#000000"
                     android:textStyle="bold" />
 
@@ -92,7 +92,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:fontFamily="@font/ubuntu_medium"
-                    android:text="TCF 2020"
+                    android:text="About the Event"
                     android:textColor="#000000"
                     android:textStyle="bold" />
 
@@ -102,7 +102,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:fontFamily="@font/ubuntu_medium"
-                    android:text="NIT Patna Clubs"
+                    android:text="Clubs of the College"
                     android:textColor="#000000"
                     android:textStyle="bold" />
 
@@ -112,7 +112,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:fontFamily="@font/ubuntu_medium"
-                    android:text="NIT Patna Map"
+                    android:text="College Map"
                     android:textColor="#000000"
                     android:textStyle="bold" />
 
@@ -122,7 +122,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:fontFamily="@font/ubuntu_medium"
-                    android:text="About NITP"
+                    android:text="About the College"
                     android:textColor="#000000"
                     android:textStyle="bold" />
 
@@ -132,17 +132,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:fontFamily="@font/ubuntu_medium"
-                    android:text="About SAC"
-                    android:textColor="#000000"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:fontFamily="@font/ubuntu_medium"
-                    android:text="About TCF 2020"
+                    android:text="About the Commitee"
                     android:textColor="#000000"
                     android:textStyle="bold" />
 
