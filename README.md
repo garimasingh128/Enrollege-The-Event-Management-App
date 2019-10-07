@@ -1,4 +1,4 @@
-# Event-Management-App
+# Enrollege-Event-Management-App
 An event management app with a simple UI. Still in development phase.
 Has the following features:
 Consolidate different teams. ...
