@@ -1,11 +1,15 @@
 package com.example.enrollege.Classes;
 
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class posts {
 
     private String textViewName;
     private String textViewTime;
     private String textViewDate;
+    private String textViewUserName;
 
 
     public String getTextViewName() {
@@ -33,11 +37,19 @@ public class posts {
         this.textViewDate = textViewDate;
     }
 
+    public String getTextViewUserName() {
+        return textViewUserName;
+    }
 
-    public posts(String textViewDate, String textViewTime, String textViewName) {
+    public void setTextViewUserName(String textViewUserName) {
+        this.textViewUserName = textViewUserName;
+    }
+
+    public posts(String textViewDate, String textViewTime, String textViewName, String textViewUserName) {
 
         this.textViewDate = textViewDate;
         this.textViewTime = textViewTime;
         this.textViewName = textViewName;
+        this.textViewUserName=textViewUserName;
     }
 }
