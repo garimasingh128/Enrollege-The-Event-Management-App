@@ -5,7 +5,7 @@
     android:id="@+id/main_activity_swipe"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000">
+    android:background="#F5F5F5">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/FeedToolbar"
@@ -28,15 +28,15 @@
 
             <ImageView
                 android:id="@+id/toolbarNavigationOpenner"
-                android:layout_width="40dp"
+                android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginRight="12dp"
-                android:src="@drawable/navicon" />
+                android:src="@drawable/toolbarnavigationopenner" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="2dp"
+                android:layout_marginLeft="6dp"
                 android:fontFamily="@font/fontastique"
                 android:gravity="center|start"
                 android:text="enrollege"
@@ -53,11 +53,13 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:tabIndicatorColor="#000000"
+        app:tabIndicatorHeight="2dp"
         android:layout_weight="1"
         android:background="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@id/FeedToolbar"
-        app:tabSelectedTextColor="@android:color/holo_red_dark"
-        app:tabTextColor="@android:color/holo_red_light"
+        app:tabSelectedTextColor="#000000"
+        app:tabTextColor="#C5C5C5"
         tools:visibility="visible">
 
         <com.google.android.material.tabs.TabItem
@@ -85,22 +87,20 @@
     </com.google.android.material.tabs.TabLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/viewpager"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tabs">
 
         <TextView
             android:id="@+id/browseSearchField1"
-            android:layout_width="80dp"
+            android:layout_width="50dp"
             android:layout_height="28dp"
-            android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/roundbrowse"
@@ -108,17 +108,17 @@
             android:elevation="10dp"
             android:gravity="center"
             android:onClick="OnClick"
-            android:text="All Posts"
-            android:textColor="#000000"
+            android:text="All"
+            android:textColor="#C5C5C5"
             android:textSize="12sp" />
 
         <TextView
             android:id="@+id/browseSearchField2"
             android:layout_width="80dp"
             android:layout_height="28dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="20dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/roundbrowse"
             android:backgroundTint="#FFFFFF"
@@ -126,7 +126,7 @@
             android:gravity="center"
             android:onClick="OnClick"
             android:text="Notice"
-            android:textColor="#000000"
+            android:textColor="#C5C5C5"
             android:textSize="12sp" />
 
         <TextView
@@ -141,7 +141,7 @@
             android:gravity="center"
             android:onClick="OnClick"
             android:text="Results"
-            android:textColor="#000000"
+            android:textColor="#C5C5C5"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -152,7 +152,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:layout_marginRight="20dp"
-        android:background="#000000"
+        android:background="#F5F5F5"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -166,10 +166,10 @@
         android:layout_alignParentBottom="true"
         android:layout_marginRight="50dp"
         android:layout_marginBottom="50dp"
-        android:elevation="5dp"
+        android:elevation="10dp"
         android:scaleType="centerCrop"
         android:src="@drawable/iconuploadpost"
-        app:backgroundTint="@android:color/holo_red_dark"
+        app:backgroundTint="#1414BD"
         app:fabCustomSize="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

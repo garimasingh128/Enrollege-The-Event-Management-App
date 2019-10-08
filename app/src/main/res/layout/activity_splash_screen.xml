@@ -11,14 +11,14 @@
         android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000000" />
+        android:background="#F5F5F5" />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="116dp"
 
         android:layout_height="116dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="180dp"
         android:background="@drawable/logo"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -34,7 +34,7 @@
         android:layout_marginTop="25dp"
         android:fontFamily="@font/fontastique"
         android:text="enrollege"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="65dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -52,8 +52,9 @@
         android:layout_marginLeft="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="50dp"
-        android:src="@drawable/googlesignin"
-        android:visibility="gone"
+        android:src="@drawable/signinwithgoogle"
+        android:elevation="5dp"
+        android:visibility="visible"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

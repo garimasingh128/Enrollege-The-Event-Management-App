@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#FFFFFF"
+    android:background="#F5F5F5"
     android:clickable="true"
     android:gravity="center"
     android:orientation="vertical">
@@ -13,18 +13,21 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:cardBackgroundColor="#FFFFFF"
-        app:cardCornerRadius="10px"
-        android:elevation="5dp"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF">
+        android:background="#FFFFFF"
+        android:elevation="5dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="10px"
+        app:cardElevation="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/holo_red_dark"
+            android:background="#FFFFFF"
             android:orientation="vertical">
 
             <ImageView
@@ -45,7 +48,7 @@
                     android:id="@+id/textViewName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
+                    android:layout_marginLeft="20dp"
                     android:fontFamily="@font/arial_rounded"
                     android:gravity="left"
                     android:text="EDM Night"
@@ -58,39 +61,40 @@
                     android:layout_width="70dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginTop="-5dp"
                     android:background="@drawable/highlightbg"
                     android:fontFamily="@font/arial_rounded"
                     android:gravity="center"
-                    android:layout_marginTop="-5dp"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
                     android:text="Highlights"
-                    android:textColor="#000000"
+                    android:textColor="#FFFFFF"
                     android:textSize="8sp" />
 
                 <TextView
                     android:id="@+id/textViewTime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:layout_marginRight="30dp"
+                    android:layout_weight="1"
                     android:gravity="right"
                     android:text="2m"
-                    android:textColor="#B8B8B8" />
+                    android:textColor="#B8B8B8"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <TextView
                 android:id="@+id/textViewDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
+                android:layout_marginLeft="20dp"
                 android:fontFamily="@font/arial_rounded"
                 android:paddingTop="5dp"
                 android:text="26 Jan | 8:00 pm"
                 android:textColor="#B8B8B8"
                 android:textStyle="bold" />
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
@@ -101,7 +105,9 @@
                     android:id="@+id/textViewExcited"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="20dp"
                     android:fontFamily="@font/fontastique"
                     android:text="Excited"
                     android:textColor="#FF8D03"
@@ -113,8 +119,30 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="10dp"
+                    app:layout_constraintStart_toEndOf="@id/textViewExcited"
+                    app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/confettiinactive" />
-            </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginRight="10dp"
+                    app:layout_constraintEnd_toStartOf="@id/textViewUserName"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@drawable/userprofile" />
+
+                <TextView
+                    android:id="@+id/textViewUserName"
+                    android:layout_width="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:textColor="#848484"
+                    android:text="User Name"
+                    android:textSize="15sp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
