@@ -15,13 +15,12 @@ import com.example.enrollege.R;
 import java.util.List;
 
 
-
-public class RecyclerAdapterPosts extends RecyclerView.Adapter<RecyclerAdapterPosts.ViewHolderPosts> {
+public class RecyclerAdapterResults extends RecyclerView.Adapter<RecyclerAdapterResults.ViewHolderResults> {
     public List<posts> postsList;
 
 
-    public class ViewHolderPosts extends RecyclerView.ViewHolder {
-        public ImageView imageEvent;
+    public class ViewHolderResults extends RecyclerView.ViewHolder {
+        public TextView results;
         public TextView textViewName;
         public TextView textViewTime;
         public TextView textViewDate;
@@ -29,27 +28,27 @@ public class RecyclerAdapterPosts extends RecyclerView.Adapter<RecyclerAdapterPo
         public ImageView imageViewProfile;
         public TextView textViewUserName;
 
-
-        public ViewHolderPosts(@NonNull View itemView) {
+        public ViewHolderResults(@NonNull View itemView) {
             super(itemView);
 
-            imageEvent = itemView.findViewById(R.id.imageEvent);
+            results = itemView.findViewById(R.id.results);
             textViewName=itemView.findViewById(R.id.textViewName);
             textViewTime = itemView.findViewById(R.id.textViewTime);
             textViewDate=itemView.findViewById(R.id.textViewDate);
             imageViewConfetti=itemView.findViewById(R.id.imageViewConfetti);
+
             textViewUserName=itemView.findViewById(R.id.textViewUserName);
             imageViewProfile=itemView.findViewById(R.id.imageViewProfile);
         }
     }
-    public RecyclerAdapterPosts(List<posts> postsList) {
+    public RecyclerAdapterResults(List<posts> postsList) {
         this.postsList = postsList;
     }
     @NonNull
     @Override
-    public ViewHolderPosts onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.postsrecyclerview,viewGroup,false);
-        return new ViewHolderPosts(view);
+    public ViewHolderResults onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.resultrecyclerview,viewGroup,false);
+        return new ViewHolderResults(view);
     }
 
 
@@ -58,13 +57,12 @@ public class RecyclerAdapterPosts extends RecyclerView.Adapter<RecyclerAdapterPo
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolderPosts viewHolder, int i) {
+    public void onBindViewHolder(@NonNull ViewHolderResults viewHolder, int i) {
         posts posts = postsList.get(i);
         viewHolder. textViewName.setText(posts.getTextViewName());
         viewHolder. textViewDate.setText(String.valueOf(posts.getTextViewDate()));
         viewHolder. textViewTime.setText(posts. getTextViewTime());
         viewHolder.textViewUserName.setText(posts.getTextViewUserName());
-
 
     }
 
